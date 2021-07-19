@@ -1,0 +1,83 @@
+.project {
+  width: 100%;
+}
+
+.project__header {
+  color: #151515;
+  font-weight: 600;
+  font-size: 38px;
+}
+
+.project__rank {
+  margin-top: 10px;
+  background-color: #f8ffff;
+  width: auto;
+}
+
+.project__container {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  border: 0.5px solid lightgray;
+  padding: 20px;
+}
+
+.project__thumbnail {
+  display: inline;
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  margin: 0 8px;
+}
+
+.project__center {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.project__top {
+  display: flex;
+}
+
+.project__title {
+  font-size: 16px;
+  height: 24px;
+  font-weight: 600;
+  color: #151515;
+}
+
+.project__artist {
+  margin-left: 10px;
+}
+
+.project__bottom {
+  display: flex;
+  color: #6f6f6f;
+  font-size: 8px;
+}
+
+.project__bottom div {
+  display: flex;
+  padding: 0px 3px 0px 3px;
+}
+
+.project__bottom p {
+  width: fit-content;
+  height: fit-content;
+  padding-right: 3px;
+  border-right: solid 0.5px #bebebe;
+}
+
+.project__right {
+  border-left: solid 1px #6f6f6f;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.project__upvote {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

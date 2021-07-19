@@ -1,0 +1,13 @@
+.dropDown__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropDown__profile {
+  color: #151515;
+}
+
+.dropDown__profile:hover {
+  color: #a2c1e0;
+}

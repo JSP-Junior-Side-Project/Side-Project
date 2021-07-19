@@ -1,0 +1,11 @@
+.reply {
+  border-radius: 8px;
+  border: solid 1px #3d4953;
+  padding: 12px;
+}
+#textArea {
+  resize: none;
+  border: solid 1px #4f9eed;
+  max-width: 100%;
+  min-width: 100%;
+}

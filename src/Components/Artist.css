@@ -1,0 +1,45 @@
+.artist {
+  width: 100%;
+}
+
+.artist__header {
+  color: #151515;
+  font-weight: 600;
+  font-size: 38px;
+}
+
+.artist__rank {
+  margin-top: 10px;
+  background-color: #f8ffff;
+  width: auto;
+}
+
+.artist__container {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  border: 0.5px solid lightgray;
+  padding: 20px 100px 20px 20px;
+}
+
+.artist__thumbnail {
+  width: 80px;
+  height: 80px;
+  margin: 0 8px;
+}
+
+.arist__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.artist__title {
+  font-size: 16px;
+  height: 24px;
+  font-weight: 600;
+  color: #151515;
+}
+
+.artist__introduction {
+  color: #151515;
+}
