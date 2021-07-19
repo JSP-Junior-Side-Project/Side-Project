@@ -1,4 +1,4 @@
-.join {
+.login {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
   transform: translate(-50%, -50%);
 }
 
-.join__header {
+.login__header {
   font-weight: 100;
   margin-bottom: 60px;
   border-bottom: 1.5px solid;
@@ -23,13 +23,13 @@ h4 {
   font-weight: 300;
 }
 
-.join__social {
+.login__social {
   display: flex;
   justify-content: space-around;
   margin: 10px;
 }
 
-.join__socialButton {
+.login__socialButton {
   margin: 10px;
   padding: 10px;
   border-radius: 50px;
@@ -37,12 +37,29 @@ h4 {
   cursor: pointer;
 }
 
-.join__socialButton:hover {
+.login__socialButton:hover {
   opacity: 0.5;
   -webkit-filter: brightness(70%);
 }
 
-.join__socialButton img {
+.login__socialButton img {
   width: 40px;
   height: 40px;
+}
+
+.login__join {
+  cursor: pointer;
+  background-color: black;
+  margin: 20px;
+  transition: 0.3s;
+}
+
+.login__join:hover {
+  background-color: #a2c1e0;
+}
+
+.login__join p {
+  font-size: 18px;
+  margin: 10px;
+  color: white;
 }

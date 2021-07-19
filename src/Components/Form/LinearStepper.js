@@ -1,7 +1,11 @@
-import { Step, StepLabel, Stepper } from '@material-ui/core'
+import PropTypes from 'prop-types';
+import { Step, StepConnector, StepLabel, Stepper } from '@material-ui/core'
+import Check from '@material-ui/icons/Check';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react'
+import clsx from 'clsx';
 
 function LinearStepper({steps, currentStep}) {
     const [activeStep, setActiveStep] = useState(0);
@@ -11,7 +15,7 @@ function LinearStepper({steps, currentStep}) {
     }, [currentStep])
 
     return (
-        <div className="linearStepper">
+        <div className="root">
             <Stepper activeStep={activeStep}>
                 {
                     steps.map((step) => (

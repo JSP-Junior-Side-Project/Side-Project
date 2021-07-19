@@ -23,7 +23,7 @@ function Navigator() {
                     </div>
                     <div className="nav__grow" />
                     <div className="nav__optionContainer">
-                        <Link to="/" className="nav__option desktop" style={{marginTop:"10px"}}>
+                        <Link to="/" className="nav__option desktop">
                             <span className="nav__home">Home</span>
                         </Link>
                         { user ? (
@@ -31,7 +31,7 @@ function Navigator() {
                                     <DropDown />
                                 </div>
                             ):(
-                                <Link to="/login" className="nav__option desktop" style={{marginTop:"10px"}}>
+                                <Link to="/login" className="nav__option desktop">
                                     <span>Login</span>
                                 </Link>
                             )

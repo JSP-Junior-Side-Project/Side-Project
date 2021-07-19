@@ -7,7 +7,6 @@ import { useStateValue } from 'Services/StateProvider/StateProvider';
 import { useForm } from 'react-hook-form';
 import { Prompt } from 'react-router-dom/cjs/react-router-dom.min';
 import 'Pages/Join.css'
-import { updateAccount, updateProfile } from 'Services/Api/api';
 
 
 function Join() {
@@ -24,10 +23,10 @@ function Join() {
     ]
 
     const socialClick = async (event) => {
-        const {target: {name}} = event;
+        const {target: {alt}} = event;
 
         // axios GET request for each social
-        if (name === "google") {
+        if (alt === "google") {
             try {
                 provider = new authService.GoogleAuthProvider();
                 await authService()
@@ -36,11 +35,11 @@ function Join() {
                 setError(error.message)
             }
 
-        } else if (name === "github") {
+        } else if (alt === "github") {
 
-        } else if (name === "kakaotalk") {
+        } else if (alt === "kakaotalk") {
 
-        } else if (name === "naver") {
+        } else if (alt === "naver") {
 
         }
     }
@@ -96,19 +95,24 @@ function Join() {
                     </div>
                 </>
             ) : (
-                <div className="join__social">
-                    <h1>간편 회원가입</h1>
-                    <div>
-                        {/* google login */}
-                        <button name="google" onClick={socialClick}>Google</button>
-                        {/* github login */}
-                        <button name="github" onClick={socialClick}>Github</button>
-                        {/* kakaotalk login */}
-                        <button name="kakaotalk" onClick={socialClick}>Kakaotalk</button>
-                        {/* naver login */}
-                        <button name="naver" onClick={socialClick}>Naver</button>
+                <>
+                    <h1 className="join__header">SIDE-PROJECT</h1>
+                    <h4>간편하게 가입하세요!</h4>
+                    <div className="join__social">
+                        <div className="join__socialButton" onClick={socialClick} style={{backgroundColor:"#EA4435"}}>
+                            <img src="https://d2v80xjmx68n4w.cloudfront.net/assets/icon/icon_google.png" alt="google"></img>
+                        </div>
+                        <div className="join__socialButton" onClick={socialClick} style={{backgroundColor:"#FFFFFF"}}>
+                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github"></img>
+                        </div>
+                        <div className="join__socialButton" onClick={socialClick} style={{backgroundColor:"#FAE100"}}>
+                            <img src="https://d2v80xjmx68n4w.cloudfront.net/assets/icon/icon_kakao.png" alt="kakaotalk"></img>
+                        </div>
+                        <div className="join__socialButton" onClick={socialClick} style={{backgroundColor:"#04CF5B "}}>
+                            <img src="https://d2v80xjmx68n4w.cloudfront.net/assets/icon/icon_naver.png" alt="naver"></img>
+                        </div>
                     </div>
-                </div>
+                </>
             )
         }
         </div>

@@ -13,3 +13,7 @@ a:-webkit-any-link {
   text-decoration: none;
   color: #151515;
 }
+
+p[role="alert"] {
+  color: tomato;
+}
