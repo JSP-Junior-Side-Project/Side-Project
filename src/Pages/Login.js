@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { authService } from 'Services/myBase';
-import 'Pages/Login.css';
+// import 'Pages/Login.css';
 
 function Login() {
     let provider;

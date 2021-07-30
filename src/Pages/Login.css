@@ -14,12 +14,12 @@
   border-bottom: 1.5px solid;
 }
 
-p {
+.login p {
   font-weight: 300;
   font-size: 18px;
 }
 
-h4 {
+.login h4 {
   font-weight: 300;
 }
 

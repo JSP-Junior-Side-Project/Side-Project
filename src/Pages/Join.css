@@ -6,6 +6,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: auto;
 }
 
 .join__header {
@@ -14,12 +15,12 @@
   border-bottom: 1.5px solid;
 }
 
-p {
+.join p {
   font-weight: 300;
   font-size: 18px;
 }
 
-h4 {
+.join h4 {
   font-weight: 300;
 }
 

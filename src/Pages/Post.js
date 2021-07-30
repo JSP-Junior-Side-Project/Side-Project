@@ -36,7 +36,7 @@ function Post() {
     return (
         <div className="post">
             <Prompt when={true} message="프로젝트 업로드를 취소하시겠습니까? 기존 기입된 정보는 모두 삭제됩니다." />
-            <h1>프로젝트 등록 페이지</h1>
+            <h1>프로젝트 등록하기</h1>
             <LinearStepper steps={pages} currentStep={page}/>
             <div className="post__form">
                 <form onSubmit={handleSubmit(onSubmit)}>

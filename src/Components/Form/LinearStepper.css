@@ -1,0 +1,10 @@
+div .MuiStepper-root {
+  display: flex;
+  padding: 24px;
+  background-color: #f3f3f3;
+  width: 100%;
+}
+
+.linearStepper {
+  width: 100%;
+}
