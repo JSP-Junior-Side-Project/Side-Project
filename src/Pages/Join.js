@@ -76,7 +76,7 @@ function Join() {
                                         register={register} 
                                         errors={errors}
                                     />
-                                    <button onClick={nextPage}>다음</button>
+                                    <div className="button" onClick={nextPage}><p>다음</p></div>
                                 </>
                             }
                             {
@@ -87,8 +87,8 @@ function Join() {
                                         errors={errors} 
                                         certified={certified}
                                     />
-                                    <button onClick={previousPage}>이전</button>
-                                    <button type="submit">제출</button>
+                                    <div className="button" onClick={previousPage}><p>이전</p></div>
+                                    <div className="button" type="submit"><p>제출</p></div>
                                 </>
                             }
                         </form>

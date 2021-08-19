@@ -74,29 +74,35 @@ function ProfileForm({register, errors}) {
                 </div>
                 <div className="profileForm__emailPolicy">
                     <input type="checkbox" {...register("checkbox")} />
-                    <p>이메일 수신 동의</p>
+                    <span>마케팅 이메일 수신 동의</span>
                 </div>
             </div>
             <div className="profileForm__right">
                 <div className="profileForm__image">
-                    <input 
-                        type="file" 
-                        accept="image/*" 
-                        {...register("file")} 
-                        onChange={onFileChange}
-                    />
+                    <p>프로필 사진</p>
                     {preview ? (
-                        <div>
-                            <img src={preview} width="50px" height="50px" />
+                        <div className="profileForm__preview">
+                            <img src={preview} width="120px" height="120px" />
                             <button onClick={onClearPreview}>Clear</button>
                         </div>
                     ) : (
-                        <div>
-                            <AccountCircle />
+                        <div className="profileForm__preview">
+                            <AccountCircle fontSize="inherit"/>
+                            <label for="image-upload" class="image-upload-label">
+                                사진 업로드
+                            </label>
+                            <input 
+                                id="image-upload"
+                                type="file" 
+                                accept="image/*" 
+                                {...register("file")} 
+                                onChange={onFileChange}
+                            />
                         </div>
                     )}
                 </div>
                 <div className="profileForm__introduction">
+                    <p>자기소개글</p>
                     <input 
                         type="text" 
                         placeholder="자신을 간단히 소개해주세요."

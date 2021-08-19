@@ -17,3 +17,22 @@ a:-webkit-any-link {
 p[role="alert"] {
   color: tomato;
 }
+
+div .button {
+  cursor: pointer;
+  background-color: black;
+  margin: 20px;
+  transition: 0.3s;
+  max-width: fit-content;
+  border-radius: 5px;
+}
+
+div .button:hover {
+  background-color: #a2c1e0;
+}
+
+div .button p {
+  font-size: 18px;
+  margin: 10px;
+  color: white;
+}

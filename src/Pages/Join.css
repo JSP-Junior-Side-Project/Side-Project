@@ -47,3 +47,70 @@
   width: 40px;
   height: 40px;
 }
+
+.profileForm {
+  display: flex;
+}
+
+.profileForm__left {
+  margin-right: 20px;
+}
+.profileForm__right {
+  margin-left: 20px;
+}
+
+.profileForm__left div {
+  margin: 10px;
+}
+
+.profileForm__emailPolicy {
+  display: flex;
+}
+
+.profileForm__emailPolicy input {
+  margin-top: 3px;
+}
+
+.profileForm__emailPolicy span {
+  margin-left: 5px;
+}
+
+:is(.profileForm__name, .profileForm__nickname, .profileForm__email) input {
+  height: 30px;
+  border: 1px solid;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.profileForm__image svg {
+  width: 120px;
+  height: 120px;
+}
+.profileForm__image input {
+  display: none;
+}
+
+.profileForm__preview {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileForm__image img {
+  border-radius: 100%;
+}
+
+.image-upload-label,
+.profileForm__preview button {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  justify-items: center;
+}
+.profileForm__introduction input {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  resize: none;
+}

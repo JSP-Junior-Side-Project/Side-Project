@@ -9,29 +9,6 @@ import { useStateValue } from 'Services/StateProvider/StateProvider'
 function PostForm4({register, errors, isValidating}) {
     const [radioValue, setRadioValue] = useState("youtube");
 
-    // const onSubmit = async (data) => {
-    //     setLoading(true)
-    //     const attachments = {}
-    //     Object.keys(data).forEach((key) => {
-    //         if (key !== "youtube") {
-    //             attachments[key]=data[key][0]
-    //         }
-    //     })
-    //     console.log(attachments)
-    //     await dispatch({
-    //         type: 'UPLOAD_PROJECT',
-    //         post: {
-    //             data: { 
-    //                 youtube: data.youtube,
-    //                 ...post.data,
-    //             },
-    //             attachments: Object.values(attachments)
-    //         }
-    //     })
-    //     setLoading(false)
-    //     nextPage();
-    // }
-
     const handleChange = (event) => {
         setRadioValue(event.target.value);
     }

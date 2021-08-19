@@ -3,7 +3,8 @@ import PostForm1 from 'Components/Form/PostForm1';
 import PostForm2 from 'Components/Form/PostForm2';
 import PostForm3 from 'Components/Form/PostForm3';
 import PostForm4 from 'Components/Form/PostForm4';
-import React from 'react'
+import PostForm5 from 'Components/Form/PostForm5';
+import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Prompt } from 'react-router-dom/cjs/react-router-dom.min';
@@ -18,6 +19,7 @@ function Post() {
         '프로젝트 설명',
         '가격 설명',
         '이미지 및 영상 등록',
+        '파일 등록'
     ]
     const nextPage = () => {
         if (isValid) {
@@ -47,7 +49,11 @@ function Post() {
                                 register={register}
                                 errors={errors}
                             />
-                            <button onClick={nextPage}>다음</button>
+                            <div className="post__button">
+                                <div onClick={nextPage}>
+                                    <p>다음</p>
+                                </div>
+                            </div>
                         </>
                     }
                     {
@@ -57,8 +63,14 @@ function Post() {
                                 register={register}
                                 errors={errors}
                             />
-                            <button onClick={previousPage}>이전</button>
-                            <button onClick={nextPage}>다음</button>
+                            <div className="post__button">
+                                <div onClick={previousPage}>
+                                    <p>이전</p>
+                                </div>
+                                <div onClick={nextPage}>
+                                    <p>다음</p>
+                                </div>
+                            </div>
                         </>
                     }
                     {
@@ -68,8 +80,14 @@ function Post() {
                                 register={register}
                                 errors={errors}
                             />
-                            <button onClick={previousPage}>이전</button>
-                            <button onClick={nextPage}>다음</button>
+                            <div className="post__button">
+                                <div onClick={previousPage}>
+                                    <p>이전</p>
+                                </div>
+                                <div onClick={nextPage}>
+                                    <p>다음</p>
+                                </div>
+                            </div>
                         </>
                     }
                     {
@@ -80,10 +98,34 @@ function Post() {
                                 errors={errors}
                                 isValidating={isValidating}
                             />
-                            <button onClick={previousPage}>이전</button>
-                            <button onClick={nextPage}>다음</button>
+                            <div className="post__button">
+                                <div onClick={previousPage}>
+                                    <p>이전</p>
+                                </div>
+                                <div onClick={nextPage}>
+                                    <p>다음</p>
+                                </div>
+                            </div>
                         </>
                     }
+                    {/* {
+                        page === 4 && 
+                        <>
+                            <PostForm5
+                                register={register}
+                                errors={errors}
+                                isValidating={isValidating}
+                            />
+                            <div className="post__button">
+                                <div onClick={previousPage}>
+                                    <p>이전</p>
+                                </div>
+                                <div onClick={nextPage}>
+                                    <p>다음</p>
+                                </div>
+                            </div>
+                        </>
+                    } */}
                     
                 </form>
                 

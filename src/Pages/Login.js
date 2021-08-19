@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { authService } from 'Services/myBase';
-// import 'Pages/Login.css';
+import 'Pages/Login.css';
 
 function Login() {
     let provider;
@@ -54,7 +54,7 @@ function Login() {
             </div>
             <p>계정이 없다면...</p>
             {/* <button className="login__join" onClick={joinClick}>회원가입!</button> */}
-            <div className="login__join" onClick={joinClick}>
+            <div className="button" onClick={joinClick}>
                 <p>회원가입!</p>
             </div>
         </div>

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .post h1 {
@@ -11,4 +11,49 @@
 
 .post__form {
   background-color: white;
+  padding: 25px;
+  border-radius: 4px;
+}
+
+.post__form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post__button {
+  margin: 15px;
+  display: flex;
+}
+
+.post__button div {
+  border: solid 1px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.post__button p {
+  justify-content: center;
+}
+
+.postForm1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 15px;
+  width: 100%;
+}
+
+.postForm1__title,
+.postForm1__category {
+  margin: 10px;
+}
+
+.postForm1 p {
+  font-weight: 600;
+}
+
+.postForm1__title input {
+  min-width: 200px;
+  min-height: 32px;
 }
