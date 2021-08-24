@@ -20,9 +20,13 @@ import axios from 'axios';
 import Post from 'Pages/Post';
 import ProjectPopup from 'Components/ProjectPopup';
 import { createNewUser } from 'Services/Api/api';
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 function App() {
+  let location = useLocation();
+  let background = location.state && location.state.background;
+  
   const [init, setInit] = useState(false);
   const [loggedIn, setLoggedIn] = useState(false);
   const [error, setError] = useState("");
@@ -83,7 +87,7 @@ function App() {
       { init ? (
           <Router>
             <div className="App">
-              <Switch>
+              <Switch location={background || location}>
                 <Route exact path="/post/new">
                   <Navigator />
                   <Post />
@@ -107,14 +111,15 @@ function App() {
                   <Navigator />
                   {user ? <Redirect to="/" /> : <Login />}
                 </Route>
+                {/* <Route path="/post/:id" component={ProjectPopup} /> */}
                 <Route exact path="/">
-                  <Route path="/post/:id" component={ProjectPopup} />
                   <Home />
                 </Route>
                 <Route>
                   {'404'}
                 </Route>
               </Switch>
+              { background && <Route exact path="post/:id" component={ProjectPopup} />}
             </div>
           </Router>
         ):(

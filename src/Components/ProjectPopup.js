@@ -6,9 +6,11 @@ import { PROJECT_API_ENDPOINT, UPVOTE_API_ENDPOINT, USER_API_ENDPOINT } from "Se
 import MyCarousel from "./MyCarousel";
 import { useStateValue } from "Services/StateProvider/StateProvider";
 import Comments from "./Comments/Comments";
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
 
 export default function ProjectPopup() {
+  let location = useLocation();
   const [{ user,upvotes }, dispatch] = useStateValue();
   const [loading, setLoading] = useState(true);
   const [projectData, setProjectData] = useState(null);

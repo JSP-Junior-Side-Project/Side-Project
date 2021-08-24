@@ -50,7 +50,7 @@ function Post() {
                                 errors={errors}
                             />
                             <div className="post__button">
-                                <div onClick={nextPage}>
+                                <div className="button" onClick={nextPage}>
                                     <p>다음</p>
                                 </div>
                             </div>
@@ -64,10 +64,10 @@ function Post() {
                                 errors={errors}
                             />
                             <div className="post__button">
-                                <div onClick={previousPage}>
+                                <div className="button" onClick={previousPage}>
                                     <p>이전</p>
                                 </div>
-                                <div onClick={nextPage}>
+                                <div className="button" onClick={nextPage}>
                                     <p>다음</p>
                                 </div>
                             </div>
@@ -81,10 +81,10 @@ function Post() {
                                 errors={errors}
                             />
                             <div className="post__button">
-                                <div onClick={previousPage}>
+                                <div className="button" onClick={previousPage}>
                                     <p>이전</p>
                                 </div>
-                                <div onClick={nextPage}>
+                                <div className="button" onClick={nextPage}>
                                     <p>다음</p>
                                 </div>
                             </div>
@@ -99,10 +99,10 @@ function Post() {
                                 isValidating={isValidating}
                             />
                             <div className="post__button">
-                                <div onClick={previousPage}>
+                                <div className="button" onClick={previousPage}>
                                     <p>이전</p>
                                 </div>
-                                <div onClick={nextPage}>
+                                <div className="button" onClick={nextPage}>
                                     <p>다음</p>
                                 </div>
                             </div>

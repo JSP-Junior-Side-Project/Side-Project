@@ -45,8 +45,10 @@ function Join() {
     }
 
     const nextPage = () => {
-        if (!isValid) {
+        if (isValid) {
             setPage(page+1)
+        } else {
+            
         }
     }
 

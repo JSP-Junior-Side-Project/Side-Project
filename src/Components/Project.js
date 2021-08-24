@@ -10,8 +10,10 @@ import moment from 'moment';
 import axios from 'axios';
 import { RANK_API_ENDPOINT } from 'Services/Api/Endpoint';
 import { CATEGORY } from './Category';
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Project({demandDate, demandPeriod}) {
+    let location = useLocation();
     const [project, setProject] = useState(null);
     const [error, setError] = useState("");
 
@@ -60,7 +62,14 @@ function Project({demandDate, demandPeriod}) {
                     <div className="project__rank">
                         {
                             project?.map(item => (
-                                <Link key={item.id} to={`/post/${item.id}`} style={{ textDecoration: "none" }}>
+                                <Link 
+                                    key={item.id} 
+                                    to={{
+                                        pathname: `/post/${item.id}`,
+                                        // state: {background: location}
+                                    }} 
+                                    style={{ textDecoration: "none" }}
+                                    >
                                     <div className="project__container" id={item.id} >
                                         <div className="project__left">
                                             <img className="project__thumbnail" src={sampleProject} alt=""/>

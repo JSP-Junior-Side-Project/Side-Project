@@ -103,7 +103,7 @@ function ProfileForm({register, errors}) {
                 </div>
                 <div className="profileForm__introduction">
                     <p>자기소개글</p>
-                    <input 
+                    <textarea 
                         type="text" 
                         placeholder="자신을 간단히 소개해주세요."
                         {...register("introduction", 

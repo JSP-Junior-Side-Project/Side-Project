@@ -23,7 +23,7 @@ function Navigator() {
                     </div>
                     <div className="nav__grow" />
                     <div className="nav__optionContainer">
-                        <Link to="/" className="nav__option desktop">
+                    <Link to="/" className="nav__option desktop">
                             <span className="nav__home">Home</span>
                         </Link>
                         { user ? (
