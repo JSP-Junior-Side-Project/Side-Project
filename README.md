@@ -1,5 +1,67 @@
 # SIDE-PROJECT
 
+## Frontend Todos
+
+### Pages
+- [ ] Home
+    - [ ] Project Rank (by dates)*
+    - [ ] Artist Rank
+    - [ ] Navigation bar*
+- [ ] Login
+    - [ ] Social Login Buttons
+    - [ ] Navigation Bar*
+- [ ] Join
+    - [ ] Social Login Buttons
+    - [ ] Join Forms (3/3)
+        - [ ] Phone Number Certification
+        - [ ] Personal Information
+        - [ ] Account Information
+- [ ] Post
+    - [ ] Post Forms (3/3)
+        - [ ] Step 1 (title, category, description, price)
+        - [ ] Step 2 (media)
+        - [ ] Step 3 (files)
+    - [ ] Navigation Bar*
+- [ ] Project List
+    - [ ] Project Rank (by query)*
+    - [ ] Filter
+    - [ ] Navigation Bar*
+- [ ] User Profile
+    - [ ] Default Frame
+    - [ ] Edit Popup
+    - [ ] Project List
+    - [ ] Sell History
+    - [ ] Buy History
+    - [ ] Withdrawl History
+    - [ ] Navigation Bar*
+- [ ] Artist Profile
+    - [ ] Default Frame
+    - [ ] Project List
+    - [ ] Navigation Bar*
+- [ ] Personal Security
+    - [ ] Account Information
+    - [ ] Account Delete
+    - [ ] Navigation Bar*
+- [ ] Payment 
+    - [ ] Payment Way Popup
+    - [ ] Navigation Bar*
+
+### Components
+- [ ] Navigation Bar
+    - [ ] Seach Bar
+    - [ ] Drop Down
+- [ ] Project Rank
+    - [ ] Project Popup
+        - [ ] Upvote Button
+        - [ ] Media Carousel
+        - [ ] Purchase & Download Buttons
+        - [ ] Comments
+
+### Styles
+- [ ] styles.css
+- [ ] fonts.css
+- [ ] responsive.css
+
 ## RESTful API 
 작성자: 장재혁 
 
